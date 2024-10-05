@@ -9,7 +9,7 @@ with open('response.json', 'r', encoding ="utf8") as file:
     data = json.load(file)
     for airtempmonthliesAverageTempC,value in data.items():
             try:
-                pring = print(airtempmonthliesAverageTempC,value)
-                print(pring)
+                print(airtempmonthliesAverageTempC,value)
+
             except UnicodeDecodeError as e:
                  pass
