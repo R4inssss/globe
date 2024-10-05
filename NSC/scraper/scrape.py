@@ -7,9 +7,11 @@ data = []
 
 with open('response.json', 'r', encoding ="utf8") as file:
     data = json.load(file)
-    for airtempmonthliesAverageTempC,value in data.items():
-            try:
-                print(airtempmonthliesAverageTempC,value)
+    for key,value in data.items():
+            print(key,value)
+            
+            # try:
+            #     print(airtempmonthliesAverageTempC,value)
 
-            except UnicodeDecodeError as e:
-                 pass
+            # except UnicodeDecodeError as e:
+            #      pass
