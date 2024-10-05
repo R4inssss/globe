@@ -1,6 +1,7 @@
 # implementation of protocols 
 import pygame
 import sys
+from config import *
 from main import Game
 
 # Game.event functions 
@@ -15,10 +16,13 @@ class GlobalWarming():
 
     max = 100
 
-    def Carbon():
+    def Barbon():
         carbon = 0
-        for i in range 25:
-            for 
+        i = cdata
+        for i in range (25), carbon != 0:
+            carbon = float([])     
+        
+            
 
     def AirTemp():
         pass
@@ -30,6 +34,6 @@ class GlobalWarming():
         pass
 
     def ClimateChange():
-
+        pass
 
     
