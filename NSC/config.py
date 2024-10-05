@@ -1,22 +1,25 @@
-
+# Game Settings
 WIN_WIDTH = 640
 WIN_HEIGHT = 480
 TILE_SIZE = 32
 FPS = 60
 
-PLAYER_LAYER = 2
+# Player Settings
 PLAYER_SPEED = 5
 
-
-
+# Layer Schema
+PLAYER_LAYER = 2
 BLOCK_LAYER = 1
 
 
+
+# Color Schema
+FLAMES = (255,0,0)
 BLUE = (0, 0, 255)
 RED = (255, 0, 0)
 BLACK = (0, 0, 0)
 
-
+# Maps
 tilemap = [
     "BBBBBBBBBBBBBBBBBBBB",
     "B..................B",

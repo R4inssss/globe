@@ -1,6 +1,7 @@
 import pygame
 from sprites import *
 from config import *
+from protocols import *
 import sys
 
 
@@ -56,7 +57,9 @@ class Game():
             self.events()
             self.update()
             self.draw()
+            #self.carbon()
         self.running = False
+
 
     def game_over(self):
         pass
