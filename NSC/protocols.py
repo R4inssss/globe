@@ -3,6 +3,8 @@ import pygame
 import sys
 from config import *
 from main import Game
+import math
+
 
 # Game.event functions 
 # C
@@ -11,29 +13,39 @@ from main import Game
 class GlobalWarming():
     def __init__(self):
         self = self
-
-
-
     max = 100
+
+
 
     def Barbon():
         carbon = 0
-        i = cdata
+        i = cdata * 100
         for i in range (25), carbon != 0:
             carbon = float([])     
         
             
 
     def AirTemp():
-        pass
+        carbon = 0
+        i = cdata * 100
+        for i in range (25), carbon != 0:
+            carbon = float([])     
     
     def SurfaceTemp():
-        pass
+        carbon = 0
+        i = cdata * 100
+        for i in range (25), carbon != 0:
+            carbon = float([])     
 
-    def Clouds():
-        pass
+    def WaterTemp():
+        carbon = 0
+        i = cdata * 100
+        for i in range (25), carbon != 0:
+            carbon = float([])     
+
 
     def ClimateChange():
-        pass
-
-    
+        carbon = 0
+        i = cdata * 100
+        for i in range (25), carbon != 0:
+            carbon = float([])     

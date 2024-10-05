@@ -2,7 +2,6 @@ import pygame
 from sprites import *
 from config import *
 from protocols import *
-from banner import *
 import sys
 
 
@@ -106,3 +105,4 @@ if __name__ == "__main__":
     
     pygame.quit()
     sys.exit()
+    
