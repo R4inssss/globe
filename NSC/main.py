@@ -14,6 +14,7 @@ class Game():
         self.font = pygame.font.SysFont('Arial', 30)
         self.running = True
 
+
     def createTilemap(self):
         for i, row in enumerate(tilemap):
             for j, column in enumerate(row):
@@ -29,9 +30,8 @@ class Game():
         self.playing = True
         self.all_sprites = pygame.sprite.LayeredUpdates()           # Object that contains all of our sprites && updates
         self.blocks = pygame.sprite.LayeredUpdates()                # walls
-        self.enemies = pygame.sprite.LayeredUpdates()               # enemies
-        self.attacks = pygame.sprite.LayeredUpdates()               # attack animation
-
+        #self.enemies = pygame.sprite.LayeredUpdates()               # enemies
+        #self.attacks = pygame.sprite.LayeredUpdates()               # attack animation
         self.createTilemap()
 
     def events(self):
@@ -66,15 +66,43 @@ class Game():
         pass
 
     def intro(self):
-        pass
+        text = ("Welcome to the Game! (Press enter to start)", True, BLACK)
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_RETURN:  # Press Enter to continue
+                        return  # Exit the banner screen
 
 
-g = Game()
-g.intro()
-g.new()
-while g.running:
-    g.main()
-    g.game_over()
+            screen.fill(WHITE)
 
-pygame.quit()
-sys.exit()
+
+            text_rect = text.get_rect(center=(WIN_WIDTH // 2, WIN_HEIGHT // 2))
+            screen.blit(text, text_rect)
+
+
+
+
+# g = Game()
+# g.intro()
+# g.new()
+# while g.running:
+#     g.main()
+#     g.game_over()
+
+# pygame.quit()
+# sys.exit()
+
+if __name__ == "__main__":
+    g = Game()
+    g.intro()
+    g.new()
+    while g.running:
+        g.main()
+        g.game_over()
+    
+    pygame.quit()
+    sys.exit()
