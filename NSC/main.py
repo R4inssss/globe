@@ -100,6 +100,20 @@ class Game():
         choice2 = self.ask_question(self.dialogue.B2text)
         print(f"\nYou selected: {choice2}\n")
 
+    # def carbon_dialogue(self):
+    #     print("""\nAdjust your diet to decrease carbon-footprint 
+    #     Why is it important? Livestock farming are one of the main contributors for methane emissions
+    #     in the atmosphere""")
+    #     choice1 = self.ask_question(self.dialogue.C1text)
+    #     print(f"\nYou selected: {choice1}\n")
+
+    #     print("""Identify what contributes most to an individual's carbon-footprint
+    #     Why is it important?: Carbon footprint indicates the total amount of greenhouse gasses generated 
+    #     by human action""")
+
+    #     choice2 = self.ask_question(self.dialogue.C2text)
+    #     print(f"\nYou selected: {choice2}\n")
+
     def carbon_dialogue(self):
         print("""\nAdjust your diet to decrease carbon-footprint 
         Why is it important? Livestock farming are one of the main contributors for methane emissions
@@ -113,7 +127,6 @@ class Game():
 
         choice2 = self.ask_question(self.dialogue.C2text)
         print(f"\nYou selected: {choice2}\n")
-
 
     # New Game loop
 
@@ -144,7 +157,7 @@ class Game():
             self.meter += 5
         else:
             self.meter -= 10
-            self.border_size += 5
+            self.border_size += 10
 
     def draw(self):
         self.screen.blit(self.bg, (0, 0))
@@ -180,6 +193,7 @@ class Game():
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
+                    intro_banner = False
                     pygame.quit()
                     sys.exit()
 
