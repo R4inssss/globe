@@ -21,7 +21,7 @@ class Game():
                 if column == "P":
                     Player(self, j, i)
 
-            #print(i, row)
+            print(i, row)
 
     def new(self):
         # New game starts
@@ -62,20 +62,16 @@ class Game():
         pass
 
     def intro(self):
-        text = ("Welcome to the Game! (Press enter to start)", True, BLACK)
-        while True:
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    pygame.quit()
-                    sys.exit()
-                if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_RETURN:  # Press Enter to continue
-                        return  # Exit the banner screen
-
-            screen.fill(WHITE)
-
-            text_rect = text.get_rect(center=(WIN_WIDTH // 2, WIN_HEIGHT // 2))
-            screen.blit(text, text_rect)
+        pass
+        # text = ("Welcome to the Game! (Press enter to start)", True, BLACK)
+        # while True:
+        #     for event in pygame.event.get():
+        #         if event.type == pygame.QUIT:
+        #             pygame.quit()
+        #             sys.exit()
+        #         if event.type == pygame.KEYDOWN:
+        #             if event.key == pygame.K_RETURN:
+        #                 return
 
 
 # g = Game()
