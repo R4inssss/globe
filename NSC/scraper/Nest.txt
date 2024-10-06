@@ -1,0 +1,11 @@
+
+Features is the first data set
+List of features
+printing data returns dict with dict array (features)
+what can we do?
+features has a dict named properties
+how to get inside the nested properties?
+
+
+
+
