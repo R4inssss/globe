@@ -8,27 +8,30 @@ from sprites import *
 
 class DialogueProgram():
     def __init__(self):
-        self = self
         pass
 
 
 class MainText():
     def __init__(self):
-        self = self
+        self.Atext = None
+        self.Btest = None
+        self.Ctext = None
+        self.Etext = None
 
     def AirDialogue(self):
-        Atext = [[{'A': 'Gas-powered transportation'}, {'B': 'Electric Transportation'},
+        self.Atext = [[{'A': 'Gas-powered transportation'}, {'B': 'Electric Transportation'},
                   {'C': 'Human Powered Transportation'}, {'D': 'Water Transportation'}],
                  [{'A': '', 'B': '', 'C': '', 'D': ''}]]
 
     def CarbonDialogue(self):
-        Btext = [[{}, {}, {}, {}],
+        self.Btext = [[{}, {}, {}, {}],
                  [{}, {}, {}, {}]]
 
     def SurfaceDialogue(self):
-        Ctext = [[{}, {}, {}, {}],
+        self.Ctext = [[{}, {}, {}, {}],
                  [{}, {}, {}, {}]]
 
-    def WaterTemp(self):
-        Dtext = [[{}, {}, {}, {}],
+    def WaterDialogue(self):
+        self.Etext = [[{}, {}, {}, {}],
                  [{}, {}, {}, {}]]
+
