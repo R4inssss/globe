@@ -1,5 +1,6 @@
 import json
 import pandas as pd
+import sys
 
 
 # Same load as before, but swapped to pandas
@@ -19,5 +20,9 @@ for feature in data['features']:
         results.append({keyKey: properties[keyKey]})#, 'location': properties['siteName']})
         # If you want to add another thing, just pass through like this:'Country': properties['countryCode']}
 
+# print(results)
+df_results = pd.DataFrame(results)
+print(df_results)
+with open('output.txt', "a", encoding='utf-8') as f:
+    f.write(str(df_results))
 
-print(results)
