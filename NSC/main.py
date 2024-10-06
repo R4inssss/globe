@@ -21,7 +21,7 @@ class Game():
 
         # Player reactives
         self.meter = 100
-        self.border_size = 10
+        self.border_size = 50
 
     # Story Loop
     def ask_question(self, question_set):
@@ -36,7 +36,7 @@ class Game():
             self.screen.blit(question_surface, (50, 50))
 
             # Render options on the screen
-            y_offset = 100
+            y_offset = 300
             option_rects = []
             for option in question_set:
                 for key, value in option.items():
