@@ -5,7 +5,32 @@ printing data returns dict with dict array (features)
 what can we do?
 features has a dict named properties
 how to get inside the nested properties?
+iterate through the properties for our item
+need value
 
 
 
-
+structure:
+{
+    "type": "FeatureCollection",
+    "name": "GLOBE-data",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "airtempmonthliesAverageTempC": "3.9",
+                "airtempmonthliesAveragedMonth": "2023-01-01",
+                "airtempmonthliesMaximumTempC": "15.9",
+                "airtempmonthliesMinimumTempC": "-5.1",
+                "airtempmonthliesNumberOfDaysReported": "31",
+                "airtempmonthliesNumberOfObs": "31",
+                "airtempmonthliesUserid": "null",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "elevation": "102.0",
+                "organizationId": "19459149",
+                "organizationName": "Wilson West Middle School",
+                "protocol": "air_temp_monthlies",
+                "siteId": "41881",
+                "siteName": "Wilson West WeatherBug"
+            },

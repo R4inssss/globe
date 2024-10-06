@@ -14,8 +14,10 @@ results = []
 
 for feature in data['features']:
     properties = feature.get('properties', {})
-    print(properties)
+    #print(properties)
     if keyKey in properties:
-        results.append(properties)
+        results.append({keyKey: properties[keyKey]})#, 'location': properties['siteName']})
+        # If you want to add another thing, just pass through like this:'Country': properties['countryCode']}
 
 
+print(results)
