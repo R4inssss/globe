@@ -1,6 +1,13 @@
 import json
 import pandas as pd
 import sys
+import requests
+
+# Global Variable initiations | strange bug where only end year returns in get request using their api
+start = 2010
+end = 2024
+
+
 
 
 # Same load as before, but swapped to pandas
@@ -19,6 +26,8 @@ for feature in data['features']:
     if keyKey in properties:
         results.append({keyKey: properties[keyKey]})#, 'location': properties['siteName']})
         # If you want to add another thing, just pass through like this:'Country': properties['countryCode']}
+
+
 
 # print(results)
 df_results = pd.DataFrame(results)

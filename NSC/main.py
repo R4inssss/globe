@@ -12,6 +12,8 @@ class Game():
         self.clock = pygame.time.Clock()
         self.font = pygame.font.SysFont('Arial', 30)
         self.running = True
+        # Map Calls
+        self.bg = pygame.image.load(r"./assets/bg.png")
 
     def createTilemap(self):
         for i, row in enumerate(tilemap):
@@ -44,7 +46,7 @@ class Game():
         self.all_sprites.update()
 
     def draw(self):
-        self.screen.fill(BLACK)
+        self.screen.blit(self.bg,(0,0))
         self.all_sprites.draw(self.screen)
         self.clock.tick(FPS)
         pygame.display.update()
@@ -63,26 +65,7 @@ class Game():
 
     def intro(self):
         pass
-        # text = ("Welcome to the Game! (Press enter to start)", True, BLACK)
-        # while True:
-        #     for event in pygame.event.get():
-        #         if event.type == pygame.QUIT:
-        #             pygame.quit()
-        #             sys.exit()
-        #         if event.type == pygame.KEYDOWN:
-        #             if event.key == pygame.K_RETURN:
-        #                 return
 
-
-# g = Game()
-# g.intro()
-# g.new()
-# while g.running:
-#     g.main()
-#     g.game_over()
-
-# pygame.quit()
-# sys.exit()
 
 if __name__ == "__main__":
     g = Game()

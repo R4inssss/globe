@@ -1,3 +1,5 @@
+import pygame
+
 # Game Settings
 WIN_WIDTH = 640
 WIN_HEIGHT = 480
@@ -12,7 +14,6 @@ PLAYER_LAYER = 2
 BLOCK_LAYER = 1
 
 
-
 # Color Schema
 FLAMES = (255,0,0)
 BLUE = (0, 0, 255)
@@ -25,7 +26,6 @@ BLACK = (0, 0, 0)
 
 # Data ingress
 cdata = []
-
 
 
 # Maps
