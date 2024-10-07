@@ -12,40 +12,11 @@ import math
 
 class GlobalWarming():
     def __init__(self):
-        self = self
-    max = 100
+        pass
 
 
-
-    def Barbon():
-        carbon = 0
-        i = cdata * 100
-        for i in range (25), carbon != 0:
-            carbon = float([])     
-        
-            
-
-    def AirTemp():
-        carbon = 0
-        i = cdata * 100
-        for i in range (25), carbon != 0:
-            carbon = float([])     
-    
-    def SurfaceTemp():
-        carbon = 0
-        i = cdata * 100
-        for i in range (25), carbon != 0:
-            carbon = float([])     
-
-    def WaterTemp():
-        carbon = 0
-        i = cdata * 100
-        for i in range (25), carbon != 0:
-            carbon = float([])     
+# Updating current answering logic
+    def answer_key(self, key):
+        pass
 
 
-    def ClimateChange():
-        carbon = 0
-        i = cdata * 100
-        for i in range (25), carbon != 0:
-            carbon = float([])     
