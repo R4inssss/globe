@@ -22,7 +22,7 @@ class GlobalWarming:
 
     def border123(self, correct, border_size_plus):
         if correct:
-            border_size_plus += 10
+            border_size_plus += 50
         else:
             border_size_plus -= 100
         return border_size_plus

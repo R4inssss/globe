@@ -82,7 +82,8 @@ class Game():
                 if choice is not None:
                     correct = self.GlobalWarming.answer_key(choice, self.key1)
                     if correct:
-                        self.border123(self.screen, correct, self.border_size)
+                        self.border_size = self.GlobalWarming.border123(correct, self.border_size)
+                        print(self.border_size)
                         
         return choice
 
@@ -233,8 +234,6 @@ class Game():
             #self.carbon()
         self.running = False
 
-    def border123(self, screen, correct, border_size):
-        pass
 
 
 if __name__ == "__main__":
