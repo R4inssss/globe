@@ -2,6 +2,7 @@ import pygame
 from sprites import *
 from config import *
 from protocols import *
+from protocols import GlobalWarming
 import sys
 from dialogue import MainText
 from dialogue import *
@@ -21,9 +22,12 @@ class Game():
 
         # Player reactives
         self.meter = 100
-        self.border_size = 150
+        self.border_size = 50
 
-    # Story Loop
+    # TODO: Add answer key
+
+    # Story Loop /TODO: Modify and add border loop for game
+
     def ask_question(self, question_set):
         choice = None
 
