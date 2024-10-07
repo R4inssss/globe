@@ -21,7 +21,7 @@ class Game():
 
         # Player reactives
         self.meter = 100
-        self.border_size = 50
+        self.border_size = 150
 
     # Story Loop
     def ask_question(self, question_set):
@@ -43,9 +43,11 @@ class Game():
                     option_text = f"{key}: {value}"
                     option_surface = self.font.render(option_text, True, BLACK)
                     option_rect = option_surface.get_rect(topleft=(50, y_offset))
-                    option_rects.append((key, option_rect))  # Store rect for mouse click detection
+                    pygame.draw.rect(self.screen, WHITE, option_rect.inflate(10, 10), 40)  # TODO: Adjust Layers
+                    option_rects.append((key, option_rect))  # Store rect for mouse click detection <-sometimes works
                     self.screen.blit(option_surface, option_rect.topleft)
                     y_offset += 50
+
 
             pygame.display.update()
 
@@ -207,7 +209,7 @@ class Game():
     def main(self):
         # game loop
         self.intro_banner()
-        self.intro()
+        #self.intro()
         self.new()
 
         # Question Sequences
