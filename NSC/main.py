@@ -80,7 +80,10 @@ class Game():
                             choice = key
 
                 if choice is not None:
-                    pass
+                    correct = self.GlobalWarming.answer_key(choice, self.key1)
+                    if correct:
+                        self.border123(self.screen, correct, self.border_size)
+                        
         return choice
 
     def air_dialogue(self):
@@ -229,6 +232,9 @@ class Game():
             self.draw()
             #self.carbon()
         self.running = False
+
+    def border123(self, screen, correct, border_size):
+        pass
 
 
 if __name__ == "__main__":
