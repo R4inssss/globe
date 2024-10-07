@@ -2,8 +2,6 @@
 import pygame
 import sys
 from config import *
-from main import Game
-from main import *
 import math
 
 

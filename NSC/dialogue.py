@@ -1,6 +1,5 @@
 import pygame
 from config import *
-from main import *
 from protocols import *
 from score import *
 from sprites import *

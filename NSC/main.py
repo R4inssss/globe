@@ -24,7 +24,9 @@ class Game():
         self.meter = 100
         self.border_size = 50
 
-    # TODO: Add answer key
+        # Answer key methods | protocols.py | can change as array
+        self.GlobalWarming = GlobalWarming()
+        self.key1 = 'A'
 
     # Story Loop /TODO: Modify and add border loop for game
 
@@ -52,7 +54,6 @@ class Game():
                     self.screen.blit(option_surface, option_rect.topleft)
                     y_offset += 50
 
-
             pygame.display.update()
 
             # Event handling
@@ -77,6 +78,9 @@ class Game():
                     for key, rect in option_rects:
                         if rect.collidepoint(mouse_pos):
                             choice = key
+
+                if choice is not None:
+                    pass
         return choice
 
     def air_dialogue(self):
@@ -172,10 +176,8 @@ class Game():
         self.clock.tick(FPS)
         pygame.display.update()
 
-
     def draw_border(self):
         pygame.draw.rect(self.screen, RED, (0, 0, WIN_WIDTH, WIN_HEIGHT), self.border_size)
-
 
     def intro(self):
         self.screen.fill(WHITE)
@@ -220,8 +222,6 @@ class Game():
         self.air_dialogue()
         self.water_dialogue()
         self.carbon_dialogue()
-
-
 
         while self.playing:
             self.events()
